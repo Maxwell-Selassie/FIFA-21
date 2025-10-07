@@ -26,6 +26,7 @@ def dataset_overview(df: pd.DataFrame):
     })
     logging.info(overview.head(10))
     return df.describe(include='all')
+
 # -------duplicate data---------
 def duplicates(df: pd.DataFrame):
     duplicates = df[df.duplicated()]
@@ -33,6 +34,7 @@ def duplicates(df: pd.DataFrame):
     if len(duplicates) == 0:
         logging.info(f'No duplicates found')
     return duplicates
+
 # -----missing data---------
 def missing_data(df: pd.DataFrame):
     missing_values = df.isnull().sum()
@@ -44,6 +46,7 @@ def missing_data(df: pd.DataFrame):
     logging.info(f'---------Missing Data(Top 10)----------\n')
     logging.info(missing_data.head(10))
     return missing_data
+
 # ---column summaries--------
 def column_summaries(df: pd.DataFrame):
     numeric_cols = df.select_dtypes(include=[np.number]).columns
@@ -55,6 +58,7 @@ def column_summaries(df: pd.DataFrame):
         uniques = df[col].unique()
         logging.info(f'{i}. {col} | Unique : {df[col].nunique()} | Examples : {uniques[:5]}')
     return numeric_cols, categorical_cols
+
 # outlier detection using IQR
 def check_outliers(df: pd.DataFrame, col: str):
     Q1 = df[col].quantile(0.25)
@@ -87,6 +91,7 @@ def save_summary(df: pd.DataFrame, name: str):
     path = f"eda_reports/{name}.csv"
     df.to_csv(path, index=False)
     logging.info(f"Saved report: {path}")
+
 def run_basic_eda(filepath: str):
     df = load_data(filepath)
 
@@ -115,7 +120,7 @@ def run_basic_eda(filepath: str):
     }
 
 if __name__ == '__main__':
-    df = run_basic_eda("fifa21 raw data v2.csv")
+    df = run_basic_eda("../data/fifa21 raw data v2.csv")
 # Temporary compatibility fix for NumPy >= 2.0
 import builtins
 if not hasattr(np, "VisibleDeprecationWarning"):
