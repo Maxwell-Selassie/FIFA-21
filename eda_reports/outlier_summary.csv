@@ -1,0 +1,55 @@
+column,Outlier_count,lower_bound,upper_bound
+ID,250,302103.75,154953.75
+Age,8,41.0,9.0
+↓OVA,156,83.5,47.5
+POT,153,87.0,55.0
+BOV,137,84.5,48.5
+Attacking,2016,409.5,109.5
+Crossing,0,100.5,0.5
+Finishing,0,110.0,-18.0
+Heading Accuracy,1108,94.0,14.0
+Short Passing,1748,89.0,33.0
+Volleys,0,95.0,-9.0
+Skill,1233,442.0,90.0
+Dribbling,1962,96.5,20.5
+Curve,0,100.0,-4.0
+FK Accuracy,3,91.0,-5.0
+Long Passing,20,95.5,11.5
+Ball Control,2053,91.5,31.5
+Movement,667,456.5,188.5
+Acceleration,782,99.5,31.5
+Sprint Speed,710,99.5,31.5
+Agility,228,102.5,26.5
+Reactions,181,86.0,38.0
+Balance,269,101.0,29.0
+Power,59,439.0,159.0
+Shot Power,0,98.0,18.0
+Jumping,412,95.5,35.5
+Stamina,878,100.0,28.0
+Strength,133,99.5,31.5
+Long Shots,0,107.0,-13.0
+Mentality,1493,401.25,123.25
+Aggression,0,106.5,6.5
+Interceptions,0,122.5,-33.5
+Positioning,11,100.0,4.0
+Vision,71,92.5,16.5
+Penalties,11,91.5,7.5
+Composure,184,92.5,24.5
+Defending,0,353.0,-79.0
+Marking,0,114.0,-22.0
+Standing Tackle,0,122.0,-30.0
+Sliding Tackle,0,120.0,-32.0
+Goalkeeping,2181,75.5,31.5
+GK Diving,2085,23.0,-1.0
+GK Handling,2085,23.0,-1.0
+GK Kicking,2089,23.0,-1.0
+GK Positioning,2086,23.0,-1.0
+GK Reflexes,2085,23.0,-1.0
+Total Stats,620,2274.5,958.5
+Base Stats,48,469.5,241.5
+PAC,334,96.0,40.0
+SHO,0,94.0,14.0
+PAS,181,83.5,31.5
+DRI,441,87.0,39.0
+DEF,0,105.0,-7.0
+PHY,117,90.5,38.5
