@@ -121,19 +121,4 @@ def run_basic_eda(filepath: str):
 
 if __name__ == '__main__':
     df = run_basic_eda("../data/fifa21 raw data v2.csv")
-# Temporary compatibility fix for NumPy >= 2.0
-import builtins
-if not hasattr(np, "VisibleDeprecationWarning"):
-    np.VisibleDeprecationWarning = builtins.DeprecationWarning
 
-import sweetviz as sv
-
-from pkg_resources import resource_filename
-# create report
-data = df['data']
-report = sv.analyze(data)
-
-# generate and show report
-report.show_html("fifa21_sweetviz_report.html")
-
-logging.info("Sweetviz report saved as eda_reports/fifa21_sweetviz_report.html")
